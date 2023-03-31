@@ -1,5 +1,14 @@
-export interface TodoInterface {
+export interface Todo {
   id: number;
   title: string;
-  body: string;
+  description: string;
+  done: boolean;
+}
+export interface Todos {
+  addTodo: () => void;
+  todos: Todo[];
+}
+export interface Target {
+  value: string;
+  name: string;
 }
